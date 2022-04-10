@@ -8,9 +8,20 @@
 
 plugins {
     // Apply the application plugin to add support for building a CLI application in Java.
-    id 'application'
+    id 'java'
 }
+configurations{
 
+
+namedMaps
+mojmaps
+enigma
+
+runtimeOnly.extendsFrom namedMaps
+vitralityMaps
+api.extendsFrom mojmaps
+
+}
 repositories {
     // Use Maven Central for resolving dependencies.
     mavenCentral()
@@ -22,11 +33,8 @@ dependencies {
 
     // This dependency is used by the application.
     implementation 'com.google.guava:guava:30.1.1-jre'
-}
+    namedMaps 'net.fabricmc:intermediary:1.18.1'
 
-application {
-    // Define the main class for the application.
-    mainClass = 'net.enriquitomc.mods.helium.balloon.App'
 }
 
 tasks.named('test') {
