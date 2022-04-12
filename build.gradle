@@ -29,11 +29,13 @@ repositories {
     maven { url "https://maven.fabricmc.net" }
     maven{
     
-    //I don't used SSL or TLS
+   
     url "http://maven.vitraclient.ml"
     allowInsecureProtocol true
     
     }
+    
+    flatdir
 }
 
 dependencies {
@@ -43,10 +45,11 @@ dependencies {
     // This dependency is used by the application.
     implementation 'com.google.guava:guava:30.1.1-jre'
     namedMaps 'net.fabricmc:intermediary:1.18.1'
-
+mojmaps 'com.adrimc:helium-mojmaps:1.18.1'
 }
 
 tasks.named('test') {
     // Use JUnit Platform for unit tests.
     useJUnitPlatform()
 }
+
