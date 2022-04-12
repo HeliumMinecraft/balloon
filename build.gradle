@@ -25,6 +25,15 @@ api.extendsFrom mojmaps
 repositories {
     // Use Maven Central for resolving dependencies.
     mavenCentral()
+    mavenLocal()
+    maven { url "https://maven.fabricmc.net" }
+    maven{
+    
+    //I don't used SSL or TLS
+    url "http://maven.vitraclient.ml"
+    allowInsecureProtocol true
+    
+    }
 }
 
 dependencies {
