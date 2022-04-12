@@ -1,0 +1,8 @@
+tsrg2 left right
+
+dqz net/minecraft/client/Minecraft =>
+
+<init>(net/minecraft/client/main/GameConfig a) 
+
+net/minecraft/crash/CrashReport report
+net/minecraft/crash/CrashReportCategory reportCat
