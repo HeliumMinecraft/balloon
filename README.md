@@ -1,11 +1,17 @@
 # balloon
 
 
-#IMPORTANT
+# IMPORTANT
 
 Balloon and Helium Mappings was superceded by Mojang's official mappings, yarn, MCPConfig or Parchment
+
 If you used Helium Mappings or Balloon, please consider migrate to Mojang mappings, yarn, MCPConfig or Parchment
+
 (i recomend you Mojang Mappings or Parchment, but you can use MCPConfig or Yarn)
+
+
+# balloon
+
 Minecraft mappings to make more easier Minecraft's modding. Usage
 
 ```gradle
